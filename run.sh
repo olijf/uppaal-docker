@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --device /dev/snd -v $(pwd)/persistent:/home/uppaal/persistent --group-add=audio -it --rm uppaal /opt/uppaal64-4.1.26-2/uppaal
